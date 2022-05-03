@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeaderSection = () => (
+const NavBarSection = () => (
   <nav
     className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
     id="mainNav"
@@ -44,4 +44,4 @@ const HeaderSection = () => (
   </nav>
 );
 
-export default HeaderSection;
+export default NavBarSection;
