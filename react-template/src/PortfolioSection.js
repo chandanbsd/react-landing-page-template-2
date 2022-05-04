@@ -5,6 +5,7 @@ import CircusPNG from "./assets/img/portfolio/circus.png";
 import GamePNG from "./assets/img/portfolio/game.png";
 import SafePNG from "./assets/img/portfolio/safe.png";
 import SubmarinePNG from "./assets/img/portfolio/submarine.png";
+import PortfolioCard from "./PortfolioCard";
 
 const PortfolioSection = () => {
   return (
@@ -23,95 +24,12 @@ const PortfolioSection = () => {
         </div>
 
         <div className="row justify-content-center">
-          <div className="col-md-6 col-lg-4 mb-5">
-            <div
-              className="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal1"
-            >
-              <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div className="portfolio-item-caption-content text-center text-white">
-                  <i className="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img className="img-fluid" src={CabinPNG} alt="..." />
-            </div>
-          </div>
-
-          <div className="col-md-6 col-lg-4 mb-5">
-            <div
-              className="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal2"
-            >
-              <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div className="portfolio-item-caption-content text-center text-white">
-                  <i className="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img className="img-fluid" src={CakePNG} alt="..." />
-            </div>
-          </div>
-
-          <div className="col-md-6 col-lg-4 mb-5">
-            <div
-              className="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal3"
-            >
-              <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div className="portfolio-item-caption-content text-center text-white">
-                  <i className="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img className="img-fluid" src={CircusPNG} alt="..." />
-            </div>
-          </div>
-
-          <div className="col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div
-              className="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal4"
-            >
-              <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div className="portfolio-item-caption-content text-center text-white">
-                  <i className="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img className="img-fluid" src={GamePNG} alt="..." />
-            </div>
-          </div>
-
-          <div className="col-md-6 col-lg-4 mb-5 mb-md-0">
-            <div
-              className="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal5"
-            >
-              <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div className="portfolio-item-caption-content text-center text-white">
-                  <i className="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img className="img-fluid" src={SafePNG} alt="..." />
-            </div>
-          </div>
-
-          <div className="col-md-6 col-lg-4">
-            <div
-              className="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal6"
-            >
-              <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div className="portfolio-item-caption-content text-center text-white">
-                  <i className="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img className="img-fluid" src={SubmarinePNG} alt="..." />
-            </div>
-          </div>
+          <PortfolioCard img={CabinPNG} name={"#Cabin"} />
+          <PortfolioCard img={CakePNG} name={"#Cake"} />
+          <PortfolioCard img={CircusPNG} name={"#Circus"} />
+          <PortfolioCard img={GamePNG} name={"#Game"} />
+          <PortfolioCard img={SafePNG} name={"#Safe"} />
+          <PortfolioCard img={SubmarinePNG} name={"#Submarine"} />
         </div>
       </div>
     </section>
